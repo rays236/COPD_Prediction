@@ -2,9 +2,12 @@
 import pandas as pd
 import pickle
 import streamlit as st
+from pathlib import Path
 
 
-model = pickle.load(open('rays236/copd_prediction/main/Prediction/Best_Random_Forest.pkl', 'rb'))
+
+
+model = pickle.load(open(Path(__file__).parent /'/Prediction/Best_Random_Forest.pkl', 'rb'))
 # Streamlit App
 
 def main():
