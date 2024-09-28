@@ -57,11 +57,12 @@ def main():
     
 
     # Prediction
-    prediction = model.predict(input_df)
-    if prediction[0] == 1:
-        st.write("Predictions: COPD Detected")
-    else:
-        st.write("Prediction: No COPD Detected")
+    if st.button('Predict COPD'):
+        prediction = model.predict(input_df)
+        if prediction[0] == 1:
+            st.write('Prediction: COPD Detected')
+        else:
+            st.write('Prediction: No COPD Detected')
 
 if __name__ == "__main__":
     main()
