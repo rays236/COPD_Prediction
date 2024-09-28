@@ -2,12 +2,13 @@
 import pandas as pd
 import pickle
 import streamlit as st
+import os
 
-
-with open(r'Prediction/Best_Random_Forest.pkl', 'rb') as f:
+#Load the trained model
+model_file_path = os.path.join(os.path.dirname(__file__), 'Best_Random_Forest.pkl')
+with open(model_file_path, 'rb') as f:
     model = pickle.load(f)
 
-# model = pickle.load(open(r'Prediction/Best_Random_Forest.pkl', 'rb'))
 # Streamlit App
 
 def main():
