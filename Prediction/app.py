@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 
-model = pickle.load(open(Path(__file__).parent /'/Prediction/Best_Random_Forest.pkl', 'rb'))
+model = pickle.load(open(r'Prediction/Best_Random_Forest.pkl', 'rb'))
 # Streamlit App
 
 def main():
