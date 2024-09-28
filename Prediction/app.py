@@ -4,6 +4,10 @@ import pickle
 import streamlit as st
 
 
+from pathlib import Path
+st.text(Path.cwd())
+
+'''
 
 with open(r'/copd_prediction/Prediction/Best_Random_Forest.pkl', 'rb') as f:
     model = pickle.load(f)
@@ -65,3 +69,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    '''
