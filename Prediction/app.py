@@ -5,9 +5,10 @@ import streamlit as st
 from pathlib import Path
 
 
+with open(r'Best_Random_Forest.pkl', 'rb') as f:
+    model = pickle.load(f)
 
-
-model = pickle.load(open(r'Prediction/Best_Random_Forest.pkl', 'rb'))
+# model = pickle.load(open(r'Prediction/Best_Random_Forest.pkl', 'rb'))
 # Streamlit App
 
 def main():
