@@ -5,7 +5,7 @@ import streamlit as st
 
 
 
-with open(r'https://github.com/rays236/COPD_Prediction/blob/4c84f2369e892c5df3cfae7e55bdfd1d9b195ae9/Prediction/Best_Random_Forest.pkl', 'rb') as f:
+with open('./Best_Random_Forest.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # model = pickle.load(open(r'Prediction/Best_Random_Forest.pkl', 'rb'))
