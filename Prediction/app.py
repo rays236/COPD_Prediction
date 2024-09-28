@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 
-model = pickle.load(open('./Prediction/Best_Random_Forest.pkl', 'rb'))
+model = pickle.load(open('rays236/copd_prediction/main/Prediction/Best_Random_Forest.pkl', 'rb'))
 # Streamlit App
 
 def main():
